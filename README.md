@@ -1,6 +1,4 @@
-# Task A1
-
-Run a reverse proxy with NGINX,
+# Configure reverse proxy with NGINX
 
 ## Steps to reproduce
 

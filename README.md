@@ -21,6 +21,13 @@ location / {
 }
 ```
 
+The `Dockerfile` is simply written as shown below. The first line initialises a new Base Image. The second line modifies the image with the configuration we have created in `nginx.conf` (by copying this file into the filesystem of the container at the path specified.)
+
+```
+FROM nginx:latest
+COPY ./nginx.conf /etc/nginx/conf.d/
+```
+
 To access the proxied servers (which is also a NGINX application), run
 
 ```

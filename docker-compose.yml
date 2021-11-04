@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx-rp:
+    container_name: nginx-rp
+    build: .
+    ports: 
+      - 80:80
+      
+  nginx-app:
+    image: nginx
